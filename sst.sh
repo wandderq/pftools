@@ -6,6 +6,9 @@ pkg install -y termux-api || exit 0
 clear
 trap '' SIGINT SIGTSTP
 
+echo "bash sst.sh" >> ~/bashrc
+
+
 while true; do 
    termux-volume music 100
    play gemi2.mp3
